@@ -9,7 +9,7 @@
 pragma solidity ^0.8.24;
 
 contract KingAttacker {
-    address target = 0x11915D8Ceb32a8C47d084d1E3D0378562CB72D38; // DEPLOYED ON OP SEPOLIA
+    address target = 0x0000000000000000000000000000000000000000;
 
     constructor() payable {
         (bool success,) = payable(target).call{value: msg.value}("");
